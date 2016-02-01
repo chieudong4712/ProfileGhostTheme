@@ -1,10 +1,10 @@
-# Ghostwriter
+# ProfileGhost
 
-Ghostwriter is a simple AJAX driven theme for the [Ghost](http://github.com/tryghost/ghost/) blogging platform released under the MIT License.
+ProfileGhost is a simple AJAX driven theme for the [Ghost](http://github.com/tryghost/ghost/) blogging platform released under the MIT License.
 
-**[View a demo of Ghostwriter](http://woowebsite.com)**
+**[View a demo of ProfileGhost](http://woowebsite.com)**
 
-**[Download Ghostwriter](https://github.com/chieudong4712/ProfileGhostTheme/archive/master.zip)**
+**[Download ProfileGhost](https://github.com/chieudong4712/ProfileGhostTheme/archive/master.zip)**
 
 **[See more of my themes](http://woowebsite.com)**
 
