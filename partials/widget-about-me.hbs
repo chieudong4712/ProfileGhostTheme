@@ -1,0 +1,16 @@
+<div class="widget widget-about-me">
+    {{#if post}}
+      {{#post}}
+        {{> about-me}}
+      {{/post}}
+    {{/if}}
+
+    {{#if posts}}
+      {{#foreach posts}}
+        {{#if @first}}
+            {{> about-me}}
+          {{/if}}
+        {{/foreach}}
+    {{/if}}
+
+</div>

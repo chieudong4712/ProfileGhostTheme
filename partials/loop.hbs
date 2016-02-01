@@ -1,0 +1,34 @@
+{{#foreach posts}}
+<div class="post-item {{post_class}} box"> 
+    <div class="post-content">
+      <h2 class="heading"><a href="{{url}}">{{{title}}}</a> </h2>
+      <div class="meta">
+        <span>By </span>
+        {{author}} . 
+        <span>{{date format="DD MMMM YYYY"}} </span>
+      </div>
+      {{#has tag="status, video, gallery"}}
+        <div class="post-media">
+          {{content words="100"}}
+        </div>
+        <div class="description">{{excerpt words="26"}}</div>
+      {{else}}
+        {{#if image}}
+          <div class="post-thumb">
+            {{#if image}}
+              <img class="featurette-image img-responsive center-block" src="{{image}}" alt="{{title}}">
+            {{/if}}
+          </div>
+        {{/if}}
+        <div class="description">{{excerpt words="26"}}...</div>
+      {{/has}}
+
+      
+      
+      <a href="{{url}}" class="read-more">
+        Continue Reading
+        <i class="icon fa fa-angle-right"></i>
+      </a>
+    </div>
+  </div>
+{{/foreach}}

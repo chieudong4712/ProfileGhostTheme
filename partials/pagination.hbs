@@ -1,0 +1,21 @@
+<!-- start pagination -->
+<div class="row paging">
+	<div class="col-xs-6">
+		<span class="m-r-10 pageof">Page {{page}} of {{pages}}</span>
+	</div>
+	<div class="col-xs-6 text-right">
+		{{#if prev}}
+		<a href="{{page_url prev}}" class="btn btn-default shadow"><i class="fa fa-angle-left"></i> Newer</a>
+		{{/if}}
+		{{#if next}}
+		<a href="{{page_url next}}" class="btn btn-default shadow">Older <i class="fa fa-angle-right"></i></a>
+		{{/if}}
+	</div>
+</div>
+
+<div class="paging text-right">
+{{#foreach pages}}
+  	<a class="btn btn-default shadow" href="#">{{@number}}</a>
+{{/foreach}}
+</div>	
+<!-- end pagination -->

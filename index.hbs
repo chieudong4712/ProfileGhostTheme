@@ -1,0 +1,19 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{> cover}}
+
+<div class="contain-wrapper">
+  <div class="container ">
+    <div class="row">
+      <div class="post-list col-md-8">
+      	{{! This is the post loop - each post will be output using this markup }}
+  			{{> loop}}
+
+        {{pagination}}
+
+      </div>
+      {{> sidebar}}
+    </div>
+  </div><!-- /.container -->
+</div>

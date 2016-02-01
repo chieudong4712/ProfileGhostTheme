@@ -1,0 +1,29 @@
+<div class="prev-next-wrap clearfix">
+	<div class="row">
+		<div class="col-md-6">
+			{{#prev_post}}
+			<div class="box previous-post">
+				<div class="prev-next-inner">
+					<a href="{{url}}">
+						{{#if image}}<img src="{{image}}" alt="{{title}}">{{/if}}
+						<h4 class="title">{{title}}</h4>
+					</a>
+				</div>
+			</div>
+			{{/prev_post}}
+		</div>
+		
+		<div class="col-md-6">
+			{{#next_post}}
+			<div class="box next-post">
+				<div class="prev-next-inner">
+			    	<a href="{{url}}">
+			    		{{#if image}}<img src="{{image}}" alt="{{title}}">{{/if}}
+						<h4 class="title">{{title}}</h4>
+					</a>
+				</div>
+		    </div>
+		    {{/next_post}}
+	    </div>
+    </div>
+</div>

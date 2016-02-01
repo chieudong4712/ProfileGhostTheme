@@ -1,0 +1,23 @@
+<!-- start about the author -->
+{{# author}}
+<div class="about-author-wrap clearfix">
+	{{#if image}}
+		<a class="author-avatar" href="{{url}}"><img src="{{image}}" alt="Author image" class="avatar shadow pull-left"></a>
+		{{else}}
+		<a href="{{url}}"><img src="{{asset "images/default-user-image.jpg"}}" alt="Author image" class="avatar pull-left"></a>
+	{{/if}}
+	<div class="details">
+		<div class="author fw-b">
+			<a href="{{url}}">{{name}}</a>
+		</div>
+		{{#if bio}}
+		<div class="bio">
+			{{bio}}
+		</div>
+		{{/if}}
+		
+	</div>
+</div>
+{{/author}}
+<!-- end about the author -->
+

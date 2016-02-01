@@ -1,0 +1,70 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{#post}}
+<div class="slider slider-left" style="background-image: url({{#if @blog.cover}}{{@blog.cover}}{{/if}})">
+  <div class="container">
+  	<div class="middle col-md-8">
+	    <div class="caption">
+	      
+	    </div>
+    </div>
+  </div>
+</div>
+{{/post}}
+
+<div class="contain-wrapper">
+  <div class="container ">
+    <div class="row ">
+    	{{#post}}
+      	<div class="single-post-full col-md-8">
+			<article id="{{id}}" class="{{post_class}} box">
+				<h1>{{title}}</h1>
+		      	<div class="meta">
+					Posted by <a href="/author/awbie/">{{author}}</a> on <i class="fa fa-clock-o"></i> 
+					<time datetime="2014-01-19">January 19th, 2014</time>.
+				</div>
+
+				<div class="post-content">
+					{{^has tag="status, video, gallery"}}
+				        {{#if image}}
+						<p class="featured-media">
+							<img alt="{{title}}" src="{{image}}">
+						</p>
+						{{/if}}
+			      	{{/has}}
+
+					{{content}}
+				</div>
+
+				<div class="row m-t-30">
+					<div class="tag-wrap col-md-6">
+					{{#if tags}}
+						<div class="tags">
+							{{tags separator=""}}
+						</div>
+					{{/if}}
+					</div>
+					<div class="social-share col-md-6 text-right clearfix">
+						{{> widget-social-share}}
+					</div>
+				</div>
+
+				<div class=" row m-t-30">
+					{{> about-author}}
+				</div>
+				
+			</article>
+			<div class="row">
+				{{> prev-next}}
+			</div>
+			<div class="box">
+				{{> comment}}
+			</div>
+      	</div>
+      	{{/post}}
+      	{{> sidebar}}
+    </div>
+  </div><!-- /.container -->
+</div>
+

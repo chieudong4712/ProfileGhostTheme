@@ -1,0 +1,28 @@
+<p class="avatar">
+	{{#if @blog.logo}}
+		<a class="user-image" href="{{url}}" >
+	  		<img src="{{@blog.logo}}"  alt="Author"/>
+	  	</a>
+	{{else}}
+		{{#if author.image}}
+	  	<a class="user-image" href="{{url}}" >
+	  		<img src="{{author.image}}" alt="Author" />
+	  	</a>
+  		{{else}}
+  		<a class="user-image" href="{{url}}" >
+  			<img src="{{asset "images/default-user-image.jpg"}}"  alt="Author"/>
+  		</a>
+  		{{/if}}
+	{{/if}}
+</p>
+{{#if author.bio}}
+	<p class="description">I'm <span class="fw-b">{{author.name}}</span> {{author.bio}}</p>
+{{/if}}
+<div class="meta-info">
+	{{#if author.location}}
+	<span class="location"><i class="fa fa-home"></i>{{author.location}}</span>
+	{{/if}}
+	{{#if author.website}}
+	<span class="website"><i class="fa fa-globe"></i><a href="{{author.website}}" title="Author's Website" target="_blank">Website</a></span>
+	{{/if}}
+</div>

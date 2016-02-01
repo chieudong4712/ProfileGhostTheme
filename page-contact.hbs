@@ -1,0 +1,57 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+
+
+<div class="contain-wrapper">
+  <div class="container ">
+    <div class="row ">
+    	<div class="col-md-10 col-md-offset-1">
+    	{{#post}}
+			<article id="{{id}}" class="{{post_class}} box">
+				<div class="post-content-full contact-page">
+					<h1 class="heading">{{title}}</h1>
+
+					<div class="contact-details">
+              <div class="row">
+                  <div class="col-md-8">
+
+                      <!-- /.YOUR LOCATION -->  
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d403452.51340949314!2d144.96328!3d-37.814107!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1451621140066" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      <!-- /.END YOUR LOCATION -->  
+
+                  </div>
+                  <div class="col-md-4">
+                      <div class="entry-content">
+                          <p>Our doors, ears and break room are always open (or at least Monday-Friday, from 9am-5pm).</p> 
+                      </div> <!-- /.entry-content -->  
+
+                      <!-- /.YOUR CONTACT DETAIL -->  
+                      <div id="contact-info">       
+                        <div><span class="fa fa-home"></span>Creative Agency, Melbourne, Australia</div>         
+                        <div><span class="fa fa-phone"></span>(555) 555-5555</div>
+                        <div><span class="fa fa-print"></span>(555) 555-4444</div>
+                        <div><span class="fa fa-envelope"></span><a href="mailto:wooowebsite@gmail.com">wooowebsite@gmail.com</a></div>
+                        <div><span class="fa fa-globe"></span><a href="http://www.woowebsite.com" target="_blank">http://www.woowebsite.com</a></div>
+                      </div>     
+                      <!-- /.YOUR CONTACT DETAIL -->  
+
+                  </div>
+              </div> <!-- /.row -->
+
+              <hr />
+              <div class="row">
+                <div class="col-md-12">
+                Praesent ornare nisi et tellus laoreet, ac tristique ipsum dignissim. Proin tempor quis augue nec eleifend. Duis posuere metus sit amet arcu accumsan varius. Nunc egestas vel justo a viverra. Mauris in sem magna. Nunc vel leo nulla. Sed id nunc sed nisl ornare faucibus eget facilisis dolor. Donec auctor nunc at libero blandit iaculis.
+
+                Phasellus vitae neque et orci dapibus pharetra. Sed fringilla sit amet nisl id luctus. In consequat euismod tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices sem eu eros viverra.
+                </div>
+              </div>
+				</div>
+			</article>
+      	{{/post}}
+      	</div>
+    </div>
+  </div><!-- /.container -->
+</div>
+

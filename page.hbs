@@ -1,0 +1,22 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+
+
+<div class="contain-wrapper">
+  <div class="container ">
+    <div class="row ">
+    	<div class="col-md-8 col-md-offset-2">
+    	{{#post}}
+			<article id="{{id}}" class="{{post_class}} box">
+				<div class="post-content post-content-full">
+					<h1 class="heading">{{title}}</h1>
+					{{content}}
+				</div>
+			</article>
+      	{{/post}}
+      	</div>
+    </div>
+  </div><!-- /.container -->
+</div>
+
